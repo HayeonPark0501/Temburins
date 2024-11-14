@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+a{
+  color: #333;
+  font-weight: 500;
+}
+p{
+  font-weight: 600;
+}
+hr{
+  color: #888;
+  width: 100%;
+}
+#wrap{
+  width: 1720px; height: auto;
+  margin: 0 auto;
+  z-index: 1;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* main */
+main{
+  width: 1720px;
+  position: relative;
+  z-index: 2;
+  min-height: calc(100vh - 70px - 494px); /* 헤더와 푸터 높이를 제외한 최소 높이 */
+  padding-bottom: 50px; /* 푸터와의 간격 확보 */
+}
+
+/* header */
+header{
+  width: 1720px; height: 70px;
+  position: fixed; top: 0; left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+header h2{
+  width: 192px; height: 26px;
+  float: left;
+  margin-top: 18px; margin-left: 26px;
+}
+header h2>a>img{
+  width: 100%; height: 100%;
+}
+/* nav .gnb */
+header nav{
+  margin-left: 246px;
+}
+header .gnb{
+  width: 905px; height: 72px;
+}
+header .gnb>li>a{
+  display: block;
+  width: 162px;
+  text-align: center;
+  font-size: 18px;
+}
+header .gnb > li{
+  float: left; width: 150px;
+  margin-left: 10px; margin-top: 22px;
+}
+header .gnb > li:hover .sub{
+  background-color: #fff;
+  display: block;
+}
+
+/* nav .sub */
+header .sub{
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  display: none;
+}
+header .sub > li{
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* sub1 */
+header #sub1{
+  width: 905px; height: 300px;
+}
+header .sub1F{
+  width: 171px; height: 213px;
+  padding: 10px 15px;
+}
+header #sub1 a{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+header .sub1A{
+  margin-top: 10px;
+}
+header #sub1 img{
+  width: 171px; height: 177px;
+}
+/* sub2 */
+header #sub2{
+  width: 905px; height: 300px;
+  transform: translateX(-150px);
+  padding-top: 30px;
+}
+header #sub2 li{
+  display: inline-block;
+}
+header .sub2F{
+  width: 500px; height: 300px;
+}
+header .sub2F .sub2F_1{
+  width: 171px; height: 213px;
+  padding: 10px 15px;
+}
+header .sub2F .sub2F_1 a{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+header .sub2F .sub2F_1 .sub2A{
+  margin-top: 10px;
+}
+header .sub2F .sub2F_1 img{
+  width: 171px; height: 177px;
+}
+
+header .sub2F .sub2F_2{
+  width: 171px; height: 213px;
+  padding: 10px 25px;
+}
+header .sub2F .sub2F_2 a{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+header .sub2F .sub2F_2 .sub2A{
+  margin-top: 10px;
+}
+header .sub2F .sub2F_2 img{
+  width: 171px; height: 177px;
+}
+/* sub3 */
+header #sub3{
+  width: 905px; height: 300px;
+  transform: translateX(-300px);
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-start; /* 요소를 왼쪽 정렬 */
+  gap: 10px; /* 요소 간 10px 간격 적용 */
+  flex-wrap: wrap; /* 여러 줄로 자동 배치되도록 설정 */
+}
+header #sub3 li{
+  display: inline-block;
+}
+header #sub3 img{
+  width: 171px; height: 177px;
+}
+header #sub3 .sub3A{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+header .sub3F{
+  display: flex;
+  width: 750px; height: 250px;
+  /* background-color: aliceblue; */
+  padding: 0px 20px;
+  margin-top: 10px;
+}
+header .sub3_1{
+  width: 171px; height: 213px;
+  margin-right: 10px;
+}
+header .sub3_2{
+  width: 171px; height: 213px;
+  margin-right: 10px;
+}
+header .sub3_3{
+  width: 171px; height: 213px;
+  margin-right: 10px;
+}
+header .sub3_4{
+  width: 171px; height: 213px;
+  margin-right: 10px;
+}
+header .sub3_2 a{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+header .sub3F .sub3_2 .sub3A{
+  margin-top: 10px;
+}
+header .sub3F .sub3_2 img{
+  width: 171px; height: 177px;
+}
+header .sub3F .sub3_3 a{
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+header .sub3F .sub3_3 .sub3A{
+  margin-top: 10px;
+}
+header .sub3F .sub3_3 img{
+  width: 171px; height: 177px;
+}
+
+/* nav... */
+header .gnb .n1{
+  margin-left: 10px;
+}
+header .gnb .n2{
+  margin-left: 6px;
+}
+header .gnb .n3{
+  margin-left: -11px;
+}
+header .gnb .n4{
+  margin-left: -19px;
+}
+header .gnb .n5{
+  margin-left: 10px;
+}
+header .gnb .n6{
+  margin-left: 7px;
+}
+
+/* search */
+header .searchBox{
+  position: absolute; top: 15px; right: 100px;
+  width: 300px; height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+}
+header .searchBt{
+  float: left;
+  width: 23px; height: 23px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-bottom: 0px;
+}
+header .searchBt img{
+  width: 100%; height: 100%;
+  display: block;
+}
+header .searchText{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0 10px;
+  color: #888;
+  font-size: 12px;
+  line-height: 1px;
+  flex-grow: 1;
+  /* width: 200px; */
+}
+
+header .icon{
+  position: absolute;
+  top: 15px; right: 6px;
+  z-index: 5;
+}
+header .icon a{
+  display: block;
+  width: 23px; height: 23px;
+  float: right;
+  margin: 10px;
+}
+header .icon>a>img{
+  width: 100%; height: 100%;
+}
+
+
+/* mainB */
+main .left{
+  width: 860px;
+  height: 875px;
+  float: left;
+  position: relative;
+}
+main .left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .pLeft{
+  font-size: 18px;
+  position: absolute; left: 34px; bottom: 10px;
+}
+main .pLeft>img{
+  width: 17px; height: 17px;
+  margin-bottom: -3px;
+}
+
+main .right{
+  width: 860px;
+  height: 875px;
+  float: right;
+  position: relative;
+}
+main .right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  float: left;
+}
+main .pRight{
+  font-size: 18px;
+  position: absolute; left: 34px; bottom: 10px;
+}
+main .pRight>img{
+  width: 17px; height: 17px;
+  float: right;
+  margin-left: 4px; margin-top: 7px;
+}
+
+main .bottom{
+  /* *footer float이슈 해결* */
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 869px;
+  clear: both;
+}
+main .bottom img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .pBottom{
+  font-size: 18px; color: #fff;
+  position: absolute; left: 34px; bottom: 10px;
+}
+main .pBottom>img{
+  width: 17px; height: 17px;
+  margin-bottom: -1px;
+}
+
+
+
+/* footer */
+footer{
+  position: relative;
+  width: 1720px;
+  height: 494px;
+  clear: both;
+  z-index: 5;
+  margin-top: 20px; /* 필요한 경우 간격 추가 */
+}
+footer p{
+  font-size: 10px;
+}
+
+footer .fGnb{
+  width: 693px;
+  height: 250px;
+  margin-left: 50px;
+}
+footer .fGnb > li a{
+  display: block;
+  font-size: 12px;
+}
+footer .fGnb > li{
+  float: left; 
+  margin-left: 10px;
+  margin-top: 77px;
+}
+
+footer .fGnb .fn2{
+  margin-left: 100px;
+}
+footer .fGnb .fn3{
+  margin-left: 100px;
+}
+footer .fGnb .fn4{
+  margin-left: 100px;
+}
+
+footer .fSub{
+  margin-top: 40px;
+}
+footer .fSub > li{
+  margin-bottom: 15px;
+}
+
+footer .footerBottom{
+  position: relative;
+  width: 1720px;
+  margin-top: 100px;
+}
+
+
+footer .footerBottom .footerBottom1{
+  width: 1720px;
+  height: 83px;
+}
+footer .fP1{
+  float: left;
+  display: block;
+  padding: 29px;
+}
+footer .footerBottom a{
+  text-decoration: underline;
+}
+footer .fP2{
+  float: right;
+  display: block;
+  padding: 28px;
+}
+
+footer .fP3{
+  display: block;
+  padding: 10px; margin: 10px;
+  width: 100px; height: 30px;
+}
+footer .fP4{
+  position: absolute;
+  top: 108px; right: 25px;
+  display: block;
+  width: 120px; height: 30px;
+  font-size: 12.5px;
+  float: right;
+
+}
+footer .fP4 img{
+  width: 12px; height: 12px;
+}
